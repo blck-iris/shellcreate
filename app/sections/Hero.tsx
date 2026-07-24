@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   ChevronRight,
@@ -105,19 +106,13 @@ export function Hero() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-stone-900/10 border border-stone-200/60">
               <div className="aspect-[4/3] bg-gradient-to-br from-stone-200 to-stone-300 relative">
-                {/* Placeholder for hero image - shells and concrete blocks */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-stone-100 to-stone-200">
-                  <div className="text-center p-8">
-                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-shell-100 text-shell-700 mb-4">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10">
-                        <path d="M12 3c-4.5 0-8 3.5-8 8 0 4.5 3.5 8 8 8s8-3.5 8-8c0-4.5-3.5-8-8-8z" />
-                        <path d="M12 7c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z" />
-                      </svg>
-                    </div>
-                    <p className="text-stone-500 text-sm font-medium">Hero Image</p>
-                    <p className="text-stone-400 text-xs mt-1">Shells & Concrete Blocks</p>
-                  </div>
-                </div>
+                <Image
+                  src="/images/hero.jpg"
+                  alt="Shells and Concrete Blocks"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
 
