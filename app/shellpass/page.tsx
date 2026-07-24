@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
 import { dashboardData, shellTypes, wasteSources } from "@/app/lib/data";
 import { ScrollReveal } from "@/app/components/ScrollReveal";
 import { AnimatedCounter } from "@/app/components/AnimatedCounter";
@@ -25,12 +24,6 @@ import {
   Download,
   ChevronDown,
 } from "lucide-react";
-
-export const metadata: Metadata = {
-  title: "ShellPass — Digital Traceability Dashboard",
-  description:
-    "ShellPass maps shell waste sources, tracks processing, connects buyers, and generates verified material passports for the shell-to-construction value chain.",
-};
 
 const sidebarItems = [
   { label: "Dashboard", icon: LayoutDashboard, active: true },
