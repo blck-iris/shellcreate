@@ -107,12 +107,12 @@ export function Hero() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-stone-900/10 border border-stone-200/60">
               <div className="aspect-[4/3] bg-gradient-to-br from-stone-200 to-stone-300 relative">
                 <Image
-                  src="public/images/hero.png"
-                  alt="Shells and Concrete Blocks"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+  src="/images/hero.png"
+  alt="Shells and Concrete Blocks"
+  fill
+  className="object-cover"
+  priority
+/>
               </div>
             </div>
 
